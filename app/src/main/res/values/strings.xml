@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+    <!-- Title of the quiz -->
+    <string name="quiz_name">Discover Slovakia</string>
+    <!-- Welcome message to the quiz -->
+    <string name="welcome_message">We have prepared a quiz for you, where you can check your knowledge about Slovakia. \n\nPlease choose the correct answers to the following questions.</string>
+    <!-- Quiz question about year of split of Czechoslovakia -->
+    <string name="question_split_of_czechoslovakia">1. In which year came to the self-determined split of the federal state of Czechoslovakia into two separate autonomous countries: the Czech Republic and Slovak Republic?</string>
+    <!-- Year input hint-->
+    <string name="year_input_hint">Year</string>
+    <!-- Quiz question about capital of Slovakia -->
+    <string name="question_capital_slovakia">2. What is the name of the capital of Slovakia?</string>
+    <!-- Capital of Slovakia input hint -->
+    <string name="capital_input_hint">Capital of Slovakia</string>
+
+    <!-- Quiz question about neighboring countries-->
+    <string name="question_neighboring_countries">3. The Slovak Republic is located at the precise geographic center of Europe.The 5 neighboring countries of Slovakia are:</string>
+
+    <!-- Names of neighboring countries with CheckBoxes -->
+    <string name="czech_republic">Czech Republic</string>
+    <string name="poland">Poland</string>
+    <string name="ukraine">Ukraine</string>
+    <string name="hungary">Hungary</string>
+    <string name="croatia">Croatia</string>
+    <string name="russia">Russia</string>
+    <string name="austria">Austria</string>
+
+    <!-- Quiz question about national dish halusky -->
+    <string name="question_halusky">4. In the picture you can see the Slovak national dish “ bryndzové halušky”. To prepare this dish you need:</string>
+
+    <!-- Names of ongredients for halusky -->
+    <string name="cabbage">cabbage</string>
+    <string name="potato_dough">potato dough</string>
+    <string name="sheep_cheese">sheep cheese</string>
+    <string name="fried_bacon">fried bacon</string>
+    <string name="flour">flour</string>
+    <string name="mushrooms">mushrooms</string>
+
+    <!-- Quiz question about translation of 'thank you' -->
+    <string name="question_translation_thank_you">5. In case you would like to say \'thank you\' in Slovakia the right expression is:</string>
+
+    <!-- Thank you translations -->
+    <string name="spasibo">Spasibo</string>
+    <string name="dekuju">Dekuju</string>
+    <string name="dakujem">Ďakujem</string>
+
+    <!-- Quiz question about slovak flag -->
+    <string name="question_flag">6. The official Slovak flag consists of three colours : blue, red and white. Which one is it?</string>
+
+    <!-- Text to the end of the quiz before submitting -->
+    <string name="conclusion">So, how did you do? If you got at least 4 correct answers, your knowledge is really good; in the case you have achieved at least 5 correct answers, your skills are truly impressive, congratulations! If you managed to get 6 correct answers, you can immediately apply for a Slovak citizenship ツ.</string>
+
+    <!-- Submit button -->
+    <string name="submit">Submit</string>
+
+    <!-- Toast message -->
+    <string name="toast">Danko si prdol hihihihiihh</string>
+
+</resources>

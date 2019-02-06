@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--Name / caption of the quiz app -->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center_horizontal" >-->
+
+            <!--<ImageView-->
+                <!--android:src="@drawable/mountain"-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_marginEnd="10dp" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="15dp"-->
+                <!--android:text="@string/quiz_name"-->
+                <!--android:textSize="26sp"-->
+                <!--android:fontFamily="sans-serif-condensed"-->
+                <!--android:textStyle="bold|italic"-->
+                <!--android:textAllCaps="true" />-->
+        <!--</LinearLayout>-->
+
+        <!--<TextView-->
+            <!--style="@style/NormalTextStyle"-->
+            <!--android:text="@string/welcome_message" />-->
+
+        <!--<View-->
+            <!--style="@style/HorizontalDividerStyle" />-->
+
+        <!--<TextView-->
+            <!--style="@style/NormalTextStyle"-->
+            <!--android:text="@string/question_split_of_czechoslovakia"/>-->
+
+        <!--<EditText-->
+            <!--style="@style/AnswerStyle"-->
+            <!--android:hint="@string/year_input_hint" />-->
+
+        <!--<View-->
+            <!--style="@style/HorizontalDividerStyle" />-->
+
+        <!--<TextView-->
+            <!--style="@style/NormalTextStyle"-->
+            <!--android:text="@string/question_capital_slovakia"/>-->
+
+        <!--<EditText-->
+            <!--style="@style/AnswerStyle"-->
+            <!--android:hint="@string/capital_input_hint" />-->
+
+        <!--<View-->
+            <!--style="@style/HorizontalDividerStyle" />-->
+
+        <!--<TextView-->
+            <!--style="@style/NormalTextStyle"-->
+            <!--android:text="@string/question_neighboring_countries" />-->
+
+        <!--<ImageView-->
+            <!--android:src="@drawable/skmap"-->
+            <!--style="@style/QuizImageStyle" />-->
+
+        <!--<LinearLayout-->
+            <!--style="@style/DirectParentOfCheckBoxAndRadioButton" >-->
+            <!--<CheckBox-->
+                <!--style="@style/CheckBoxAndRadioButtonStyle"-->
+                <!--android:text="@string/czech_republic" />-->
+            <!--<CheckBox-->
+                <!--style="@style/CheckBoxAndRadioButtonStyle"-->
+                <!--android:text="@string/poland" />-->
+            <!--<CheckBox-->
+                <!--style="@style/CheckBoxAndRadioButtonStyle"-->
+                <!--android:text="@string/ukraine" />-->
+            <!--<CheckBox-->
+                <!--style="@style/CheckBoxAndRadioButtonStyle"-->
+                <!--android:text="@string/hungary" />-->
+            <!--<CheckBox-->
+                <!--style="@style/CheckBoxAndRadioButtonStyle"-->
+                <!--android:text="@string/croatia" />-->
+            <!--<CheckBox-->
+                <!--style="@style/CheckBoxAndRadioButtonStyle"-->
+                <!--android:text="@string/russia" />-->
+            <!--<CheckBox-->
+                <!--style="@style/CheckBoxAndRadioButtonStyle"-->
+                <!--android:text="@string/austria" />-->
+        <!--</LinearLayout>-->
+
+        <!--<View-->
+            <!--style="@style/HorizontalDividerStyle" />-->
+
+        <!--<TextView-->
+            <!--style="@style/NormalTextStyle"-->
+            <!--android:text="@string/question_halusky" />-->
+
+        <!--<ImageView-->
+            <!--android:src="@drawable/halusky"-->
+            <!--style="@style/QuizImageStyle" />-->
+
+        <!--<LinearLayout-->
+            <!--style="@style/DirectParentOfCheckBoxAndRadioButton" >-->
+            <!--<CheckBox-->
+                <!--style="@style/CheckBoxAndRadioButtonStyle"-->
+                <!--android:text="@string/cabbage" />-->
+            <!--<CheckBox-->
+                <!--style="@style/CheckBoxAndRadioButtonStyle"-->
+                <!--android:text="@string/potato_dough" />-->
+            <!--<CheckBox-->
+                <!--style="@style/CheckBoxAndRadioButtonStyle"-->
+                <!--android:text="@string/sheep_cheese" />-->
+            <!--<CheckBox-->
+                <!--style="@style/CheckBoxAndRadioButtonStyle"-->
+                <!--android:text="@string/fried_bacon" />-->
+            <!--<CheckBox-->
+                <!--style="@style/CheckBoxAndRadioButtonStyle"-->
+                <!--android:text="@string/flour" />-->
+            <!--<CheckBox-->
+                <!--style="@style/CheckBoxAndRadioButtonStyle"-->
+                <!--android:text="@string/mushrooms" />-->
+        <!--</LinearLayout>-->
+
+        <!--<View-->
+            <!--style="@style/HorizontalDividerStyle" />-->
+
+        <!--<TextView-->
+            <!--style="@style/NormalTextStyle"-->
+            <!--android:text="@string/question_translation_thank_you" />-->
+
+        <!--<RadioGroup-->
+            <!--style="@style/DirectParentOfCheckBoxAndRadioButton" >-->
+            <!--<RadioButton-->
+                <!--style="@style/CheckBoxAndRadioButtonStyle"-->
+                <!--android:text="@string/spasibo" />-->
+            <!--<RadioButton-->
+                <!--style="@style/CheckBoxAndRadioButtonStyle"-->
+                <!--android:text="@string/dekuju" />-->
+            <!--<RadioButton-->
+                <!--style="@style/CheckBoxAndRadioButtonStyle"-->
+                <!--android:text="@string/dakujem" />-->
+        <!--</RadioGroup>-->
+
+        <!--<View-->
+            <!--style="@style/HorizontalDividerStyle" />-->
+
+        <!--<TextView-->
+            <!--style="@style/NormalTextStyle"-->
+            <!--android:text="@string/question_flag" />-->
+
+        <LinearLayout
+            style="@style/DirectParentOfRadioButtonWithFlag"
+            android:orientation="horizontal">
+            <RadioButton
+                style="@style/CheckBoxAndRadioButtonStyle" />
+
+            <ImageView
+                style="@style/FlagImageStyle"
+                android:src="@drawable/flagcz" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/DirectParentOfRadioButtonWithFlag" >
+            <RadioButton
+                style="@style/CheckBoxAndRadioButtonStyle" />
+
+            <ImageView
+                style="@style/FlagImageStyle"
+                android:src="@drawable/flagsk" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/DirectParentOfRadioButtonWithFlag">
+            <RadioButton
+                style="@style/CheckBoxAndRadioButtonStyle" />
+
+            <ImageView
+                style="@style/FlagImageStyle"
+                android:src="@drawable/flagru" />
+        </LinearLayout>
+
+        <View
+            style="@style/HorizontalDividerStyle" />
+
+        <TextView
+            style="@style/NormalTextStyle"
+            android:text="@string/conclusion" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:onClick="submitQuiz"
+            android:padding="20dp"
+            android:text="@string/submit" />
+    </LinearLayout>
+</ScrollView>

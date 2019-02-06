@@ -24,19 +24,27 @@
         <item name="android:layout_marginTop">10dp</item>
     </style>
 
-    <!-- Style for answers -->
-    <style name="AnswerStyle">
+    <!-- Style for text input -->
+    <style name="TextInputStyle">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginLeft">35dp</item>
         <item name="android:layout_marginRight">35dp</item>
     </style>
 
+    <!-- Style for map and dish image in quiz -->
+    <style name="QuizImageStyle">
+        <item name="android:layout_width">220dp</item>
+        <item name="android:layout_height">160dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">15dp</item>
+    </style>
+
     <!-- Style for CheckBox and RadioButton -->
     <style name="CheckBoxAndRadioButtonStyle">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginLeft">35dp</item>
         <item name="android:paddingLeft">15dp</item>
     </style>
 
@@ -46,7 +54,6 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:orientation">vertical</item>
         <item name="android:layout_marginTop">15dp</item>
-        <item name="android:layout_marginLeft">15dp</item>
     </style>
 
     <!-- Style for LinearLayout - RadioButton with flag image direct parent  -->
@@ -55,7 +62,6 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:orientation">horizontal</item>
         <item name="android:layout_marginTop">15dp</item>
-        <item name="android:layout_marginLeft">15dp</item>
     </style>
 
     <!-- Style for flag image -->
@@ -63,13 +69,5 @@
         <item name="android:layout_width">50dp</item>
         <item name="android:layout_height">35dp</item>
 
-    </style>
-
-    <!-- Style for map and dish image in quiz -->
-    <style name="QuizImageStyle">
-        <item name="android:layout_width">220dp</item>
-        <item name="android:layout_height">160dp</item>
-        <item name="android:layout_gravity">center_horizontal</item>
-        <item name="android:layout_marginTop">15dp</item>
     </style>
 </resources>

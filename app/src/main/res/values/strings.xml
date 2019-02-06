@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Quiz App</string>
     <!-- Title of the quiz -->
     <string name="quiz_name">Discover Slovakia</string>
@@ -48,12 +48,14 @@
     <string name="question_flag">6. The official Slovak flag consists of three colours : blue, red and white. Which one is it?</string>
 
     <!-- Text to the end of the quiz before submitting -->
-    <string name="conclusion">So, how did you do? If you got at least 4 correct answers, your knowledge is really good; in the case you have achieved at least 5 correct answers, your skills are truly impressive, congratulations! If you managed to get 6 correct answers, you can immediately apply for a Slovak citizenship ツ.</string>
+    <string name="conclusion">So, how did you do? Press the submit button to get the results!</string>
 
     <!-- Submit button -->
     <string name="submit">Submit</string>
 
-    <!-- Toast message -->
-    <string name="toast">Danko si prdol hihihihiihh</string>
-
+    <!-- Result toast text according to the achieved score-->
+    <string name="poorResult">Ouch! You have achieved score of just <xliff:g id="finalScore" example="1">%d</xliff:g> point out of 6. Your knowledge about Slovakia is really poor. You should definitely visit this beautiful country.</string>
+    <string name="goodResult">You have achieved score of <xliff:g id="finalScore" example="3">%d</xliff:g> points out of 6. Your knowledge about Slovakia is insufficient. You should definitely visit this beautiful country.</string>
+    <string name="veryGoodResult">Congratulations! You have achieved score of  <xliff:g id="finalScore" example="5">%d</xliff:g> points out of 6. Your knowledge about Slovakia is really good. It seems that you have already been there. If not, it is time to change it ツ</string>
+    <string name="championResult">Awesome! You have achieved full score of <xliff:g id="finalScore" example="6">%d</xliff:g> points. Your skills are truly impressive, you can immediately apply for a Slovak citizenship ツ</string>
 </resources>

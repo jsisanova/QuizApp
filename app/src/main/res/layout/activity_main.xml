@@ -17,179 +17,101 @@
         android:orientation="vertical">
 
         <!--Name / caption of the quiz app -->
-        <!--<LinearLayout-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:gravity="center_horizontal" >-->
-
-            <!--<ImageView-->
-                <!--android:src="@drawable/mountain"-->
-                <!--android:layout_width="40dp"-->
-                <!--android:layout_height="40dp"-->
-                <!--android:layout_marginEnd="10dp" />-->
-
-            <!--<TextView-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_marginBottom="15dp"-->
-                <!--android:text="@string/quiz_name"-->
-                <!--android:textSize="26sp"-->
-                <!--android:fontFamily="sans-serif-condensed"-->
-                <!--android:textStyle="bold|italic"-->
-                <!--android:textAllCaps="true" />-->
-        <!--</LinearLayout>-->
-
-        <!--<TextView-->
-            <!--style="@style/NormalTextStyle"-->
-            <!--android:text="@string/welcome_message" />-->
-
-        <!--<View-->
-            <!--style="@style/HorizontalDividerStyle" />-->
-
-        <!--<TextView-->
-            <!--style="@style/NormalTextStyle"-->
-            <!--android:text="@string/question_split_of_czechoslovakia"/>-->
-
-        <!--<EditText-->
-            <!--style="@style/AnswerStyle"-->
-            <!--android:hint="@string/year_input_hint" />-->
-
-        <!--<View-->
-            <!--style="@style/HorizontalDividerStyle" />-->
-
-        <!--<TextView-->
-            <!--style="@style/NormalTextStyle"-->
-            <!--android:text="@string/question_capital_slovakia"/>-->
-
-        <!--<EditText-->
-            <!--style="@style/AnswerStyle"-->
-            <!--android:hint="@string/capital_input_hint" />-->
-
-        <!--<View-->
-            <!--style="@style/HorizontalDividerStyle" />-->
-
-        <!--<TextView-->
-            <!--style="@style/NormalTextStyle"-->
-            <!--android:text="@string/question_neighboring_countries" />-->
-
-        <!--<ImageView-->
-            <!--android:src="@drawable/skmap"-->
-            <!--style="@style/QuizImageStyle" />-->
-
-        <!--<LinearLayout-->
-            <!--style="@style/DirectParentOfCheckBoxAndRadioButton" >-->
-            <!--<CheckBox-->
-                <!--style="@style/CheckBoxAndRadioButtonStyle"-->
-                <!--android:text="@string/czech_republic" />-->
-            <!--<CheckBox-->
-                <!--style="@style/CheckBoxAndRadioButtonStyle"-->
-                <!--android:text="@string/poland" />-->
-            <!--<CheckBox-->
-                <!--style="@style/CheckBoxAndRadioButtonStyle"-->
-                <!--android:text="@string/ukraine" />-->
-            <!--<CheckBox-->
-                <!--style="@style/CheckBoxAndRadioButtonStyle"-->
-                <!--android:text="@string/hungary" />-->
-            <!--<CheckBox-->
-                <!--style="@style/CheckBoxAndRadioButtonStyle"-->
-                <!--android:text="@string/croatia" />-->
-            <!--<CheckBox-->
-                <!--style="@style/CheckBoxAndRadioButtonStyle"-->
-                <!--android:text="@string/russia" />-->
-            <!--<CheckBox-->
-                <!--style="@style/CheckBoxAndRadioButtonStyle"-->
-                <!--android:text="@string/austria" />-->
-        <!--</LinearLayout>-->
-
-        <!--<View-->
-            <!--style="@style/HorizontalDividerStyle" />-->
-
-        <!--<TextView-->
-            <!--style="@style/NormalTextStyle"-->
-            <!--android:text="@string/question_halusky" />-->
-
-        <!--<ImageView-->
-            <!--android:src="@drawable/halusky"-->
-            <!--style="@style/QuizImageStyle" />-->
-
-        <!--<LinearLayout-->
-            <!--style="@style/DirectParentOfCheckBoxAndRadioButton" >-->
-            <!--<CheckBox-->
-                <!--style="@style/CheckBoxAndRadioButtonStyle"-->
-                <!--android:text="@string/cabbage" />-->
-            <!--<CheckBox-->
-                <!--style="@style/CheckBoxAndRadioButtonStyle"-->
-                <!--android:text="@string/potato_dough" />-->
-            <!--<CheckBox-->
-                <!--style="@style/CheckBoxAndRadioButtonStyle"-->
-                <!--android:text="@string/sheep_cheese" />-->
-            <!--<CheckBox-->
-                <!--style="@style/CheckBoxAndRadioButtonStyle"-->
-                <!--android:text="@string/fried_bacon" />-->
-            <!--<CheckBox-->
-                <!--style="@style/CheckBoxAndRadioButtonStyle"-->
-                <!--android:text="@string/flour" />-->
-            <!--<CheckBox-->
-                <!--style="@style/CheckBoxAndRadioButtonStyle"-->
-                <!--android:text="@string/mushrooms" />-->
-        <!--</LinearLayout>-->
-
-        <!--<View-->
-            <!--style="@style/HorizontalDividerStyle" />-->
-
-        <!--<TextView-->
-            <!--style="@style/NormalTextStyle"-->
-            <!--android:text="@string/question_translation_thank_you" />-->
-
-        <!--<RadioGroup-->
-            <!--style="@style/DirectParentOfCheckBoxAndRadioButton" >-->
-            <!--<RadioButton-->
-                <!--style="@style/CheckBoxAndRadioButtonStyle"-->
-                <!--android:text="@string/spasibo" />-->
-            <!--<RadioButton-->
-                <!--style="@style/CheckBoxAndRadioButtonStyle"-->
-                <!--android:text="@string/dekuju" />-->
-            <!--<RadioButton-->
-                <!--style="@style/CheckBoxAndRadioButtonStyle"-->
-                <!--android:text="@string/dakujem" />-->
-        <!--</RadioGroup>-->
-
-        <!--<View-->
-            <!--style="@style/HorizontalDividerStyle" />-->
-
-        <!--<TextView-->
-            <!--style="@style/NormalTextStyle"-->
-            <!--android:text="@string/question_flag" />-->
-
         <LinearLayout
-            style="@style/DirectParentOfRadioButtonWithFlag"
-            android:orientation="horizontal">
-            <RadioButton
-                style="@style/CheckBoxAndRadioButtonStyle" />
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
 
             <ImageView
-                style="@style/FlagImageStyle"
-                android:src="@drawable/flagcz" />
+                android:src="@drawable/mountain"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:text="@string/quiz_name"
+                android:textSize="26sp"
+                android:fontFamily="sans-serif-condensed"
+                android:textStyle="bold|italic"
+                android:textAllCaps="true" />
         </LinearLayout>
 
+        <!--Introduction-->
+        <TextView
+            style="@style/NormalTextStyle"
+            android:text="@string/welcome_message" />
+
+        <View
+            style="@style/HorizontalDividerStyle" />
+
+        <!--Quiz questions-->
+        <TextView
+            style="@style/NormalTextStyle"
+            android:text="@string/question_split_of_czechoslovakia"/>
+
+        <EditText
+            android:id="@+id/input_year"
+            android:inputType="number"
+            style="@style/TextInputStyle"
+            android:hint="@string/year_input_hint" />
+
+        <View
+            style="@style/HorizontalDividerStyle" />
+
+        <TextView
+            style="@style/NormalTextStyle"
+            android:text="@string/question_capital_slovakia"/>
+
+        <EditText
+            android:id="@+id/input_capital"
+            android:inputType="textCapWords"
+            style="@style/TextInputStyle"
+            android:hint="@string/capital_input_hint" />
+
+        <View
+            style="@style/HorizontalDividerStyle" />
+
+        <TextView
+            style="@style/NormalTextStyle"
+            android:text="@string/question_neighboring_countries" />
+
+        <ImageView
+            android:src="@drawable/skmap"
+            style="@style/QuizImageStyle" />
+
         <LinearLayout
-            style="@style/DirectParentOfRadioButtonWithFlag" >
-            <RadioButton
-                style="@style/CheckBoxAndRadioButtonStyle" />
-
-            <ImageView
-                style="@style/FlagImageStyle"
-                android:src="@drawable/flagsk" />
-        </LinearLayout>
-
-        <LinearLayout
-            style="@style/DirectParentOfRadioButtonWithFlag">
-            <RadioButton
-                style="@style/CheckBoxAndRadioButtonStyle" />
-
-            <ImageView
-                style="@style/FlagImageStyle"
-                android:src="@drawable/flagru" />
+            style="@style/DirectParentOfCheckBoxAndRadioButton" >
+            <CheckBox
+                android:id="@+id/czech_republic"
+                style="@style/CheckBoxAndRadioButtonStyle"
+                android:text="@string/czech_republic" />
+            <CheckBox
+                android:id="@+id/poland"
+                style="@style/CheckBoxAndRadioButtonStyle"
+                android:text="@string/poland" />
+            <CheckBox
+                android:id="@+id/ukraine"
+                style="@style/CheckBoxAndRadioButtonStyle"
+                android:text="@string/ukraine" />
+            <CheckBox
+                android:id="@+id/hungary"
+                style="@style/CheckBoxAndRadioButtonStyle"
+                android:text="@string/hungary" />
+            <CheckBox
+                android:id="@+id/croatia"
+                style="@style/CheckBoxAndRadioButtonStyle"
+                android:text="@string/croatia" />
+            <CheckBox
+                android:id="@+id/russia"
+                style="@style/CheckBoxAndRadioButtonStyle"
+                android:text="@string/russia" />
+            <CheckBox
+                android:id="@+id/austria"
+                style="@style/CheckBoxAndRadioButtonStyle"
+                android:text="@string/austria" />
         </LinearLayout>
 
         <View
@@ -197,8 +119,122 @@
 
         <TextView
             style="@style/NormalTextStyle"
+            android:text="@string/question_halusky" />
+
+        <ImageView
+            android:src="@drawable/halusky"
+            style="@style/QuizImageStyle" />
+
+        <LinearLayout
+            style="@style/DirectParentOfCheckBoxAndRadioButton" >
+            <CheckBox
+                android:id="@+id/cabbage"
+                style="@style/CheckBoxAndRadioButtonStyle"
+                android:text="@string/cabbage" />
+            <CheckBox
+                android:id="@+id/potato_dough"
+                style="@style/CheckBoxAndRadioButtonStyle"
+                android:text="@string/potato_dough" />
+            <CheckBox
+                android:id="@+id/sheep_cheese"
+                style="@style/CheckBoxAndRadioButtonStyle"
+                android:text="@string/sheep_cheese" />
+            <CheckBox
+                android:id="@+id/fried_bacon"
+                style="@style/CheckBoxAndRadioButtonStyle"
+                android:text="@string/fried_bacon" />
+            <CheckBox
+                android:id="@+id/flour"
+                style="@style/CheckBoxAndRadioButtonStyle"
+                android:text="@string/flour" />
+            <CheckBox
+                android:id="@+id/mushrooms"
+                style="@style/CheckBoxAndRadioButtonStyle"
+                android:text="@string/mushrooms" />
+        </LinearLayout>
+
+        <View
+            style="@style/HorizontalDividerStyle" />
+
+        <TextView
+            style="@style/NormalTextStyle"
+            android:text="@string/question_translation_thank_you" />
+
+        <RadioGroup
+            style="@style/DirectParentOfCheckBoxAndRadioButton" >
+            <RadioButton
+                android:id="@+id/spasibo"
+                style="@style/CheckBoxAndRadioButtonStyle"
+                android:text="@string/spasibo" />
+            <RadioButton
+                android:id="@+id/dekuju"
+                style="@style/CheckBoxAndRadioButtonStyle"
+                android:text="@string/dekuju" />
+            <RadioButton
+                android:id="@+id/dakujem"
+                style="@style/CheckBoxAndRadioButtonStyle"
+                android:text="@string/dakujem" />
+        </RadioGroup>
+
+        <View
+            style="@style/HorizontalDividerStyle" />
+
+        <TextView
+            style="@style/NormalTextStyle"
+            android:text="@string/question_flag" />
+
+        <LinearLayout
+            style="@style/DirectParentOfRadioButtonWithFlag"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/czech_flag"
+                    style="@style/CheckBoxAndRadioButtonStyle"
+                    android:layout_height="35dp" />
+
+                <RadioButton
+                    android:id="@+id/slovak_flag"
+                    style="@style/CheckBoxAndRadioButtonStyle"
+                    android:layout_height="35dp" />
+
+                <RadioButton
+                    android:id="@+id/russian_flag"
+                    style="@style/CheckBoxAndRadioButtonStyle"
+                    android:layout_height="35dp" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    style="@style/FlagImageStyle"
+                    android:src="@drawable/flagcz" />
+                <ImageView
+                    style="@style/FlagImageStyle"
+                    android:src="@drawable/flagsk" />
+
+                <ImageView
+                    style="@style/FlagImageStyle"
+                    android:src="@drawable/flagru" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            style="@style/HorizontalDividerStyle" />
+
+        <!--Conclusion-->
+        <TextView
+            style="@style/NormalTextStyle"
             android:text="@string/conclusion" />
 
+        <!--Submit button-->
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

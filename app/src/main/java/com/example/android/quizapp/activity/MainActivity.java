@@ -1,4 +1,4 @@
-package com.example.android.quizapp;
+package com.example.android.quizapp.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,6 +9,8 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
+import com.example.android.quizapp.R;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -16,8 +18,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-
-
 
     public void submitQuiz(View v) {
 
@@ -28,7 +28,6 @@ public class MainActivity extends AppCompatActivity {
 
         EditText capitalInput = (EditText) findViewById(R.id.input_capital);
         String capital = capitalInput.getText().toString();
-//        Log.v("MainActivity", "Capital = " + capital);
 
         CheckBox czechRepublic = (CheckBox) findViewById(R.id.czech_republic);
         boolean isNeighboringCzechRepublic = czechRepublic.isChecked();
@@ -72,11 +71,9 @@ public class MainActivity extends AppCompatActivity {
 
         RadioButton slovakFlag = (RadioButton) findViewById(R.id.slovak_flag);
         boolean isCheckedSlovakFlag = slovakFlag.isChecked();
-//        Log.v("MainActivity", "slovak flag is checked: " + isCheckedSlovakFlag);
 
         RadioButton dakujem = (RadioButton) findViewById(R.id.dakujem);
         boolean isSlovakDakujem = dakujem.isChecked();
-//        Log.v("MainActivity", "slovak " +isSlovakDakujem);
 
         int scoreYearOfDissociation = calculateScoreYear(finalYear);
         int scoreCapital = calculateScoreCapital(capital);
@@ -87,11 +84,11 @@ public class MainActivity extends AppCompatActivity {
 
         int finalScore = scoreYearOfDissociation + scoreCapital + scoreNeighboringCountries + scoreHalusky + scoreThankYou + scoreFlag;
 
-//        display toast message
+//        Display toast message
         Toast.makeText(this, createText(finalScore) , Toast.LENGTH_LONG).show();
     }
 
-    /** Create text
+    /** Create final text toast message
      *
      */
     private String createText(int endScore) {
@@ -115,11 +112,9 @@ public class MainActivity extends AppCompatActivity {
      */
     private int calculateScoreYear(int yearOfDissociation) {
         int yearPoint = 0;
-
         if (yearOfDissociation == 1993) {
             yearPoint = yearPoint + 1;
         }
-
         return yearPoint;
     }
 
@@ -130,11 +125,9 @@ public class MainActivity extends AppCompatActivity {
      */
     private int calculateScoreCapital(String capitalOfSlovakia) {
         int capitalCityPoint = 0;
-
         if (capitalOfSlovakia.equals("Bratislava") || capitalOfSlovakia.equals("bratislava")) {
             capitalCityPoint = capitalCityPoint + 1;
         }
-
         return capitalCityPoint;
     }
 
@@ -149,14 +142,11 @@ public class MainActivity extends AppCompatActivity {
      * @param austria is checked if it is neighboring country
      * @return score for the question
      */
-
     private int calculateScoreNeghboringCountries(boolean czechRepublic, boolean poland, boolean ukraine, boolean hungary, boolean croatia, boolean russia, boolean austria) {
         int neighboringCountriesPoint = 0;
-
         if (czechRepublic && poland && ukraine && hungary && austria && !croatia && !russia) {
             neighboringCountriesPoint = neighboringCountriesPoint + 1;
         }
-
         return neighboringCountriesPoint;
     }
 
@@ -170,14 +160,11 @@ public class MainActivity extends AppCompatActivity {
      * @param mushrooms is checked if it is ingredient for halusky
      * @return score for the question
      */
-
     private int calculateScoreHalusky(boolean cabbage, boolean potatoDough, boolean sheepCheese, boolean friedBacon, boolean flour, boolean mushrooms) {
         int haluskyPoint = 0;
-
         if (potatoDough && sheepCheese && friedBacon && flour && !cabbage && !mushrooms) {
             haluskyPoint = haluskyPoint + 1;
         }
-
         return haluskyPoint;
     }
 
@@ -187,14 +174,11 @@ public class MainActivity extends AppCompatActivity {
      * @param slovakThankYou is if slovak thank you is checked
      * @return score for the question
      */
-
     private int calculateScoreThankYou(boolean slovakThankYou) {
         int thankYouPoint = 0;
-
         if (slovakThankYou) {
             thankYouPoint = thankYouPoint + 1;
         }
-
         return thankYouPoint;
     }
 
@@ -203,14 +187,11 @@ public class MainActivity extends AppCompatActivity {
      * @param slovakFlag is if slovak flag is checked
      * @return score for the question
      */
-
     private int calculateScoreFlags(boolean slovakFlag) {
         int flagPoint = 0;
-
         if (slovakFlag) {
             flagPoint = flagPoint + 1;
         }
-
         return flagPoint;
     }
 }

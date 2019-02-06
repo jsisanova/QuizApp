@@ -1,5 +1,4 @@
 <resources>
-
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
@@ -68,6 +67,5 @@
     <style name="FlagImageStyle">
         <item name="android:layout_width">50dp</item>
         <item name="android:layout_height">35dp</item>
-
     </style>
 </resources>

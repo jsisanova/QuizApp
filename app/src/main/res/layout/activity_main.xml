@@ -7,7 +7,7 @@
     android:orientation="vertical"
     tools:context=".activity.MainActivity" >
 
-    <!--focusableInTouchMode: By starting the app stop EditText to have immediately input focus (flashing cursor) on it -->
+    <!--focusableInTouchMode: By starting the app stops EditText to have immediately input focus (flashing cursor) on it -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

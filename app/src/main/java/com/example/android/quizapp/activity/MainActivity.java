@@ -125,7 +125,7 @@ public class MainActivity extends AppCompatActivity {
      */
     private int calculateScoreCapital(String capitalOfSlovakia) {
         int capitalCityPoint = 0;
-        if (capitalOfSlovakia.equals("Bratislava") || capitalOfSlovakia.equals("bratislava")) {
+        if (capitalOfSlovakia.equalsIgnoreCase("bratislava")) {
             capitalCityPoint = capitalCityPoint + 1;
         }
         return capitalCityPoint;

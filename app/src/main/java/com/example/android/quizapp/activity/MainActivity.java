@@ -13,6 +13,8 @@ import com.example.android.quizapp.R;
 
 public class MainActivity extends AppCompatActivity {
 
+    private int finalScore;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -75,18 +77,26 @@ public class MainActivity extends AppCompatActivity {
         RadioButton dakujem = (RadioButton) findViewById(R.id.dakujem);
         boolean isSlovakDakujem = dakujem.isChecked();
 
-        int scoreYearOfDissociation = calculateScoreYear(finalYear);
-        int scoreCapital = calculateScoreCapital(capital);
-        int scoreNeighboringCountries = calculateScoreNeghboringCountries(isNeighboringCzechRepublic, isNeighboringPoland, isNeighboringUkraine, isNeighboringHungary, isNeighboringCroatia, isNeighboringRussia, isNeighboringAustria);
-        int scoreHalusky = calculateScoreHalusky(isCheckedCabbage, isCheckedPotatoDough, isCheckedSheepCheese, isCheckedFriedBacon, isCheckedFlour, isCheckedMushrooms);
-        int scoreThankYou = calculateScoreThankYou(isSlovakDakujem);
-        int scoreFlag =  calculateScoreFlags(isCheckedSlovakFlag);
+//        int scoreYearOfDissociation = calculateScoreYear(finalYear);
+//        int scoreCapital = calculateScoreCapital(capital);
+//        int scoreNeighboringCountries = calculateScoreNeghboringCountries(isNeighboringCzechRepublic, isNeighboringPoland, isNeighboringUkraine, isNeighboringHungary, isNeighboringCroatia, isNeighboringRussia, isNeighboringAustria);
+//        int scoreHalusky = calculateScoreHalusky(isCheckedCabbage, isCheckedPotatoDough, isCheckedSheepCheese, isCheckedFriedBacon, isCheckedFlour, isCheckedMushrooms);
+//        int scoreThankYou = calculateScoreThankYou(isSlovakDakujem);
+//        int scoreFlag =  calculateScoreFlags(isCheckedSlovakFlag);
 
-        int finalScore = scoreYearOfDissociation + scoreCapital + scoreNeighboringCountries + scoreHalusky + scoreThankYou + scoreFlag;
+//        int finalScore = scoreYearOfDissociation + scoreCapital + scoreNeighboringCountries + scoreHalusky + scoreThankYou + scoreFlag;
+
+       calculateScoreYear(finalYear);
+       calculateScoreCapital(capital);
+       calculateScoreNeghboringCountries(isNeighboringCzechRepublic, isNeighboringPoland, isNeighboringUkraine, isNeighboringHungary, isNeighboringCroatia, isNeighboringRussia, isNeighboringAustria);
+       calculateScoreHalusky(isCheckedCabbage, isCheckedPotatoDough, isCheckedSheepCheese, isCheckedFriedBacon, isCheckedFlour, isCheckedMushrooms);
+       calculateScoreThankYou(isSlovakDakujem);
+       calculateScoreFlags(isCheckedSlovakFlag);
 
 //        Display toast message
         Toast.makeText(this, createText(finalScore) , Toast.LENGTH_LONG).show();
     }
+
 
     /** Create final text toast message
      *
@@ -108,27 +118,21 @@ public class MainActivity extends AppCompatActivity {
     /** Add point to score in quiz for question about year of dissociation of Czechoslovakia
      *
      * @param yearOfDissociation is the year of dissociation of Czechoslovakia
-     * @return score for the question
      */
-    private int calculateScoreYear(int yearOfDissociation) {
-        int yearPoint = 0;
+    private void calculateScoreYear(int yearOfDissociation) {
         if (yearOfDissociation == 1993) {
-            yearPoint = yearPoint + 1;
+           finalScore = finalScore + 1;
         }
-        return yearPoint;
     }
 
     /** Add point to score in quiz for question about our capital
      *
      * @param capitalOfSlovakia is the name of the capital of Slovakia
-     * @return score for the question
      */
-    private int calculateScoreCapital(String capitalOfSlovakia) {
-        int capitalCityPoint = 0;
+    private void calculateScoreCapital(String capitalOfSlovakia) {
         if (capitalOfSlovakia.equalsIgnoreCase("bratislava")) {
-            capitalCityPoint = capitalCityPoint + 1;
+            finalScore = finalScore + 1;
         }
-        return capitalCityPoint;
     }
 
     /** Add point to score in quiz for question about neighboring countries
@@ -140,14 +144,11 @@ public class MainActivity extends AppCompatActivity {
      * @param croatia is checked if it is neighboring country
      * @param russia is checked if it is neighboring country
      * @param austria is checked if it is neighboring country
-     * @return score for the question
      */
-    private int calculateScoreNeghboringCountries(boolean czechRepublic, boolean poland, boolean ukraine, boolean hungary, boolean croatia, boolean russia, boolean austria) {
-        int neighboringCountriesPoint = 0;
+    private void calculateScoreNeghboringCountries(boolean czechRepublic, boolean poland, boolean ukraine, boolean hungary, boolean croatia, boolean russia, boolean austria) {
         if (czechRepublic && poland && ukraine && hungary && austria && !croatia && !russia) {
-            neighboringCountriesPoint = neighboringCountriesPoint + 1;
+            finalScore = finalScore + 1;
         }
-        return neighboringCountriesPoint;
     }
 
     /** Add point to score in quiz for question about national food halusky
@@ -158,40 +159,31 @@ public class MainActivity extends AppCompatActivity {
      * @param friedBacon is checked if it is ingredient for halusky
      * @param flour is checked if it is ingredient for halusky
      * @param mushrooms is checked if it is ingredient for halusky
-     * @return score for the question
      */
-    private int calculateScoreHalusky(boolean cabbage, boolean potatoDough, boolean sheepCheese, boolean friedBacon, boolean flour, boolean mushrooms) {
-        int haluskyPoint = 0;
+    private void calculateScoreHalusky(boolean cabbage, boolean potatoDough, boolean sheepCheese, boolean friedBacon, boolean flour, boolean mushrooms) {
         if (potatoDough && sheepCheese && friedBacon && flour && !cabbage && !mushrooms) {
-            haluskyPoint = haluskyPoint + 1;
+            finalScore = finalScore + 1;
         }
-        return haluskyPoint;
     }
 
 
     /** Add point to score in quiz for THANK YOU translation question
      *
      * @param slovakThankYou is if slovak thank you is checked
-     * @return score for the question
      */
-    private int calculateScoreThankYou(boolean slovakThankYou) {
-        int thankYouPoint = 0;
+    private void calculateScoreThankYou(boolean slovakThankYou) {
         if (slovakThankYou) {
-            thankYouPoint = thankYouPoint + 1;
+            finalScore = finalScore + 1;
         }
-        return thankYouPoint;
     }
 
     /** Add point to score in quiz for flag question
      *
      * @param slovakFlag is if slovak flag is checked
-     * @return score for the question
      */
-    private int calculateScoreFlags(boolean slovakFlag) {
-        int flagPoint = 0;
+    private void calculateScoreFlags(boolean slovakFlag) {
         if (slovakFlag) {
-            flagPoint = flagPoint + 1;
+            finalScore = finalScore + 1;
         }
-        return flagPoint;
     }
 }
